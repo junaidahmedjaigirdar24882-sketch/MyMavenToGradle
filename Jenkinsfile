@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/junaidahmedjaigirdar24882-sketch/MyMavenToGradle.git'
+                git branch: 'master', url: 'https://github.com/junaidahmedjaigirdar24882-sketch/MyMavenToGradle.git'
             }
         }
 
