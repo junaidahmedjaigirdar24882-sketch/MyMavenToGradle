@@ -4,16 +4,17 @@ apply plugin: 'application'
 group = 'com.example'
 version = '1.0-SNAPSHOT'
 
+description = """MyMavenToGradle"""
+
 sourceCompatibility = 11
 targetCompatibility = 11
 
+mainClassName = 'com.example.App'
+
 repositories {
-    mavenCentral()
+    maven { url "https://repo.maven.apache.org/maven2" }
 }
 
 dependencies {
-    implementation 'org.seleniumhq.selenium:selenium-java:4.41.0'
-    testImplementation 'junit:junit:4.13.2'
+    testCompile group: 'junit', name: 'junit', version: '3.8.1'
 }
-
-mainClassName = 'com.example.App'
